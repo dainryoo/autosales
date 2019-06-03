@@ -1,3 +1,28 @@
-p {
-	color: lightblue;
+body {
+	margin: 0;
+}
+
+.group {
+    width: 100%;
+    height: 300px;
+}
+
+.header {
+    background-color: grey;
+}
+
+.splash {
+    background-color: yellow;
+}
+
+.dream {
+    background-color: pink;
+}
+
+.options {
+    background-color: lightblue;
+}
+
+.footer {
+    background-color: grey;
 }
