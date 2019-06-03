@@ -2,27 +2,68 @@ body {
 	margin: 0;
 }
 
-.group {
-    width: 100%;
-    height: 300px;
+/* the "vertical" layers */
+.layer {
+    background-color: lightgrey;
+    border-bottom: 1px solid red;
+    padding: 0 200px;
 }
 
-.header {
-    background-color: grey;
+/* flexbox container within each necessary layer */
+.flex {
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.splash {
-    background-color: yellow;
+
+/* ----------------- HEADER ----------------- */
+.header.layer {
+	height: 20px;
+	background-color: grey;
 }
 
-.dream {
-    background-color: pink;
+
+/* ----------------- SPLASH ----------------- */
+.splash.layer {
+	height: 300px;
+	background-color: yellow;
 }
 
-.options {
-    background-color: lightblue;
+/* ----------------- DREAM ----------------- */
+.dream.layer {
+	background-color: pink;
 }
 
-.footer {
-    background-color: grey;
+/* car feature inputs */
+.dream .feature {
+	height: 45px;
+	width: 25%;
+	border: 1px solid blue;
+}
+
+
+/* ----------------- BRAND ----------------- */
+.brand.layer {
+	background-color: lightblue;
+}
+
+/* text description of each brand */
+.brand .description {
+	height: 200px;
+	width: 50%;
+	border: 1px solid blue;
+}
+
+/* car pictures */
+.brand .image {
+	height: 200px;
+	width: 25%;
+	border: 1px solid blue;
+}
+
+/* ----------------- FOOTER ----------------- */
+.footer.layer {
+	height: 50px;
+	background-color: grey;
 }
