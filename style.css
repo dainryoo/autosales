@@ -35,11 +35,19 @@ body {
 	background-color: pink;
 }
 
-/* car feature inputs */
+/* car feature input containers */
 .dream .feature {
 	height: 45px;
 	width: 25%;
+	padding: 10px;
+	box-sizing: border-box;
 	border: 1px solid blue;
+}
+
+/* car feature inputs */
+.dream .feature select,
+.dream .feature button {
+	width: 100%;
 }
 
 
@@ -50,16 +58,30 @@ body {
 
 /* text description of each brand */
 .brand .description {
-	height: 200px;
 	width: 50%;
+	box-sizing: border-box;
 	border: 1px solid blue;
 }
 
-/* car pictures */
+/* car pictures container */
 .brand .image {
-	height: 200px;
 	width: 25%;
+	padding: 30px 10px;
+	box-sizing: border-box;
 	border: 1px solid blue;
+	overflow: hidden;
+	display: inline-block;
+}
+
+/* car pictures wrapper to help with image fitting inside nicely */
+.brand .image .wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+/* actual car picture */
+.brand .image img {
+	width: 100%;
 }
 
 /* ----------------- FOOTER ----------------- */
