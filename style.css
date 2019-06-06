@@ -5,8 +5,8 @@ body {
 
 button {
 	border: none;
-	font-size: 16px;
 	color: white;
+	font-size: 16px;
 	font-weight: bolder;
 }
 
@@ -61,9 +61,27 @@ button {
 /* ================================== HEADER ================================== */
 
 .header.layer {
-	height: 20px;
-	background-color: grey;
+	background-color: #3d4852;
+	padding: 12px 64px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
+
+.logo {
+	color: white;
+	font-size: 24px;
+	font-weight: bolder;
+
+	display: flex;
+	align-items: center;
+}
+
+.nav {
+	color: white;
+}
+
 
 /* ================================== SPLASH ================================== */
 
@@ -411,6 +429,14 @@ button {
 /* ================================== FOOTER ================================== */
 
 .footer.layer {
-	height: 50px;
-	background-color: grey;
+	background-color: #3d4852;
+	padding: 24px 64px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.copyright {
+	color: lightgrey;
 }
