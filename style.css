@@ -236,6 +236,7 @@ button {
 /* ----------- text description of each brand ----------- */
 .brand .description {
 	box-sizing: border-box;
+	padding: 40px 10px;
 }
 
 /* media queries for .brand .description */
@@ -258,18 +259,28 @@ button {
 
 	/* padding on right for layers that have text first */
 	.brand:nth-child(even) .description {
-		padding-right: 60px;
+		padding-right: 55px;
 	}
 
 	/* padding on left for layers that have text after pictures */
 	.brand:nth-child(odd) .description {
-		padding-left: 60px;
+		padding-left: 55px;
 	}
 }
 
 .brand .description h2,
 .brand .description p {
 	color: #3d4852;
+}
+
+.brand .description h2 {
+	margin-top: 0px;
+	font-size: 30px;
+}
+
+.brand .description p {
+	font-size: 16px;
+	line-height: 30px;
 }
 
 .brand button {
@@ -279,7 +290,7 @@ button {
 
 /* ----------- car pictures container ----------- */
 .brand .image {
-	padding: 30px 10px;
+	padding: 40px 10px;
 	box-sizing: border-box;
 	overflow: hidden;
 	display: inline-block;
