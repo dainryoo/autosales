@@ -7,7 +7,38 @@ body {
 .layer {
     background-color: lightgrey;
     border-bottom: 1px solid red;
-    padding: 0 200px;
+
+}
+
+/* media queries for .splash.layer */
+@media (max-width: 600px) {
+	.layer {
+    	padding: 0 24px;
+	}
+}
+
+@media (min-width: 600px) {
+	.layer {
+    	padding: 0 52px;
+	}
+}
+
+@media (min-width: 768px) {
+	.layer {
+    	padding: 0 88px;
+	}
+}
+
+@media (min-width: 992px) {
+	.layer {
+    	padding: 0 164px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.layer {
+    	padding: 0 200px;
+	}
 }
 
 /* TODO: RESPONSIVE PADDING FOR .layer */
