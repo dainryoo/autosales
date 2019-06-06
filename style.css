@@ -4,9 +4,11 @@ body {
 }
 
 /* ----------- the "vertical" layers ----------- */
-.layer {
+.layer:nth-child(even) {
     background-color: lightgrey;
-    border-bottom: 1px solid red;
+}
+.layer:nth-child(odd) {
+    background-color: white;
 }
 
 /* media queries for .layer */
@@ -157,7 +159,7 @@ body {
 /* ================================== DREAM ================================== */
 
 .dream.layer {
-	background-color: pink;
+	border-top: 1px solid grey;
 }
 
 /* ----------- car feature input containers ----------- */
@@ -165,7 +167,6 @@ body {
 	height: 45px;
 	padding: 10px;
 	box-sizing: border-box;
-	border: 1px solid blue;
 }
 
 /* media queries for .dream .feature */
@@ -195,14 +196,29 @@ body {
 
 /* ================================== BRAND ================================== */
 
-.brand.layer {
-	background-color: lightblue;
+/* ----------- reverse the direction of content for every other car brand (so that pictures always appear BELOW text) ----------- */
+/* media queries for .brand.layer */
+@media (max-width: 600px) {
+	.brand.layer:nth-child(odd) {
+		flex-wrap: wrap-reverse;
+	}
+}
+
+@media (min-width: 600px) {
+	.brand.layer:nth-child(odd) {
+		flex-wrap: wrap-reverse;
+	}
+}
+
+@media (min-width: 768px) {
+	.brand.layer:nth-child(odd) {
+		flex-wrap: wrap;
+	}
 }
 
 /* ----------- text description of each brand ----------- */
 .brand .description {
 	box-sizing: border-box;
-	border: 1px solid blue;
 }
 
 /* media queries for .brand .description */
@@ -228,7 +244,6 @@ body {
 .brand .image {
 	padding: 30px 10px;
 	box-sizing: border-box;
-	border: 1px solid blue;
 	overflow: hidden;
 	display: inline-block;
 }
