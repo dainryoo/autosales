@@ -5,7 +5,6 @@ body {
 
 button {
 	border: none;
-	padding: 16px 55px;
 	font-size: 16px;
 	color: white;
 	font-weight: bolder;
@@ -165,6 +164,7 @@ button {
 }
 
 .splash button {
+	padding: 16px 55px;
 	background-color: #28c278;
 }
 
@@ -172,13 +172,34 @@ button {
 
 .dream.layer {
 	border-top: 1px solid #f0f2f3;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+/* media queries for .dream.layer */
+@media (max-width: 600px) {
+	.dream.layer {
+		padding-bottom: 44px;
+	}
+}
+
+@media (min-width: 600px) {
+	.dream.layer {
+		padding-bottom: 44px;
+	}
+}
+
+@media (min-width: 768px) {
+	.dream.layer {
+		padding-bottom: 24px;
+	}
 }
 
 /* ----------- car feature input containers ----------- */
 .dream .feature {
 	height: 45px;
-	padding: 10px;
 	box-sizing: border-box;
+	padding: 0 10px;
 }
 
 /* media queries for .dream .feature */
@@ -186,16 +207,30 @@ button {
 	.dream .feature {
 		width: 100%;
 	}
+
+	.dream .feature:last-child {
+		padding-top: 20px;
+	}
 }
 
 @media (min-width: 600px) {
 	.dream .feature {
-		width: 33%;
+		width: 33.33%;
+	}
+
+	.dream .feature:last-child {
+		padding-top: 20px;
+		width: 100%;
 	}
 }
 
 @media (min-width: 768px) {
 	.dream .feature {
+		width: 25%;
+	}
+
+	.dream .feature:last-child {
+		padding-top: 0px;
 		width: 25%;
 	}
 }
@@ -206,9 +241,23 @@ button {
 	width: 100%;
 }
 
-.dream .feature button {
-	background-color: #f07e5e;
+.dream .feature select {
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #9aa0a5;
+	font-family: "Helvetica", sans-serif;
+	font-weight: bolder;
+	padding: 12px 16px;
+	border: 2px solid #cdd1d4;
+}
 
+.dream .feature button {
+	padding: 12px 55px;
+	background-color: #f07e5e;
+	border: 2px solid #f07e5e;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 /* ================================== BRAND ================================== */
@@ -284,16 +333,16 @@ button {
 }
 
 .brand button {
-	background-color: #4fc4e6;
 	padding: 12px 32px;
+	background-color: #4fc4e6;
 }
 
 /* ----------- car pictures container ----------- */
 .brand .image {
-	padding: 40px 10px;
-	box-sizing: border-box;
-	overflow: hidden;
 	display: inline-block;
+	box-sizing: border-box;
+	padding: 40px 10px;
+	overflow: hidden;
 }
 
 /* media queries for .brand .image */
