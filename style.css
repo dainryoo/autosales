@@ -10,6 +10,8 @@ body {
     padding: 0 200px;
 }
 
+/* TODO: RESPONSIVE PADDING FOR .layer */
+
 /* flexbox container within each necessary layer */
 .flex {
 	display: flex;
@@ -27,7 +29,7 @@ body {
 /* ----------------- SPLASH ----------------- */
 /* the big splash image */
 .splash.layer {
-	height: 55vh;
+	height: 70vh;
 	background-image: url("media/hero.png");
 	background-size: 150%;
 	background-repeat: no-repeat;
@@ -36,6 +38,8 @@ body {
 	display: flex;
 	align-items: center;
 }
+
+/* TODO: RESPONSIVE HEIGHT, BACKGROUND-SIZE and -POSITION FOR .splash.layer */
 
 /* container for text on top of splash image */
 .splash .title {
@@ -47,6 +51,8 @@ body {
 .splash .title h1 {
 	font-size: 54px;
 }
+
+/* TODO: RESPONSIVE FONT SIZE FOR .splash .title h1 */
 
 /* ----------------- DREAM ----------------- */
 .dream.layer {
