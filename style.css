@@ -3,9 +3,17 @@ body {
 	font-family: "Helvetica", sans-serif;
 }
 
+button {
+	border: none;
+	padding: 16px 55px;
+	font-size: 16px;
+	color: white;
+	font-weight: bolder;
+}
+
 /* ----------- the "vertical" layers ----------- */
 .layer:nth-child(even) {
-    background-color: lightgrey;
+    background-color: #f0f2f3;
 }
 .layer:nth-child(odd) {
     background-color: white;
@@ -128,7 +136,7 @@ body {
 
 /* ----------- text on top of splash image ----------- */
 .splash .title h1 {
-	color: grey;
+	color: #3d4852;
 }
 
 /* media queries for .splash .title h1 */
@@ -156,10 +164,14 @@ body {
 	}
 }
 
+.splash button {
+	background-color: #28c278;
+}
+
 /* ================================== DREAM ================================== */
 
 .dream.layer {
-	border-top: 1px solid grey;
+	border-top: 1px solid #f0f2f3;
 }
 
 /* ----------- car feature input containers ----------- */
@@ -192,6 +204,11 @@ body {
 .dream .feature select,
 .dream .feature button {
 	width: 100%;
+}
+
+.dream .feature button {
+	background-color: #f07e5e;
+
 }
 
 /* ================================== BRAND ================================== */
@@ -238,6 +255,26 @@ body {
 	.brand .description {
 		width: 50%;
 	}
+
+	/* padding on right for layers that have text first */
+	.brand:nth-child(even) .description {
+		padding-right: 60px;
+	}
+
+	/* padding on left for layers that have text after pictures */
+	.brand:nth-child(odd) .description {
+		padding-left: 60px;
+	}
+}
+
+.brand .description h2,
+.brand .description p {
+	color: #3d4852;
+}
+
+.brand button {
+	background-color: #4fc4e6;
+	padding: 12px 32px;
 }
 
 /* ----------- car pictures container ----------- */
