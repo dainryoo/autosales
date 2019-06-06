@@ -3,11 +3,19 @@ body {
 	font-family: "Helvetica", sans-serif;
 }
 
+a {
+	text-decoration: none
+}
+
 button {
 	border: none;
 	color: white;
 	font-size: 16px;
 	font-weight: bolder;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 /* ----------- the "vertical" layers ----------- */
@@ -62,7 +70,7 @@ button {
 
 .header.layer {
 	background-color: #3d4852;
-	padding: 12px 64px;
+	padding: 10px 64px;
 
 	display: flex;
 	align-items: center;
@@ -78,10 +86,34 @@ button {
 	align-items: center;
 }
 
-.nav {
+.logo a {
 	color: white;
+	margin-left: 12px;
 }
 
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav a {
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 20px;
+}
+
+.nav a:hover {
+	color: #9aa0a5;
+}
+
+.nav img {
+	margin-left: 20px;
+}
+
+.nav img:hover {
+	cursor: pointer;
+}
 
 /* ================================== SPLASH ================================== */
 
@@ -184,6 +216,11 @@ button {
 .splash button {
 	padding: 16px 55px;
 	background-color: #28c278;
+	font-size: 20px;
+}
+
+.splash button:hover {
+	background-color: #2dd484;
 }
 
 /* ================================== DREAM ================================== */
@@ -302,6 +339,17 @@ button {
 	background-repeat: no-repeat;
 }
 
+.dream .feature select:hover {
+	cursor: pointer;
+	border-color: #3d4852;
+
+	background-image:
+		linear-gradient(45deg, transparent 50%, white 50%),
+		linear-gradient(135deg, white 50%, transparent 50%),
+		linear-gradient(45deg, transparent 50%, #3d4852 50%),
+		linear-gradient(135deg, #3d4852 50%, transparent 50%);
+}
+
 .dream .feature button {
 	padding: 12px 55px;
 	background-color: #f07e5e;
@@ -309,6 +357,11 @@ button {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+}
+
+.dream .feature button:hover {
+	background-color: #fd9476;
+	border-color: #fd9476;
 }
 
 /* ================================== BRAND ================================== */
@@ -388,6 +441,10 @@ button {
 	background-color: #4fc4e6;
 }
 
+.brand button:hover {
+	background-color: #5dd3f6;
+}
+
 /* ----------- car pictures container ----------- */
 .brand .image {
 	display: inline-block;
@@ -430,13 +487,20 @@ button {
 
 .footer.layer {
 	background-color: #3d4852;
-	padding: 24px 64px;
+	padding: 36px 64px;
 
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.copyright {
-	color: lightgrey;
+.copyright,
+.copyright a {
+	color: #6d7780;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.copyright a:hover {
+	text-decoration: underline
 }
