@@ -10,7 +10,7 @@ body {
 
 }
 
-/* media queries for .splash.layer */
+/* media queries for .layer */
 @media (max-width: 600px) {
 	.layer {
     	padding: 0 24px;
@@ -40,8 +40,6 @@ body {
     	padding: 0 200px;
 	}
 }
-
-/* TODO: RESPONSIVE PADDING FOR .layer */
 
 /* ----------- flexbox container within each necessary layer ----------- */
 .flex {
@@ -111,17 +109,72 @@ body {
 }
 
 /* ----------- container for text on top of splash image ----------- */
-.splash .title {
-	border: 1px solid blue;
-	width: 60%;
+/* media queries for .splash .title */
+@media (max-width: 600px) {
+	.splash .title {
+    	width: 80%;
+	}
+}
+
+@media (min-width: 600px) {
+	.splash .title {
+    	width: 75%;
+	}
+}
+
+@media (min-width: 768px) {
+	.splash .title {
+    	width: 60%;
+	}
+}
+
+@media (min-width: 992px) {
+	.splash .title {
+    	width: 60%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.splash .title {
+    	width: 60%;
+	}
 }
 
 /* ----------- text on top of splash image ----------- */
 .splash .title h1 {
-	font-size: 54px;
+	color: grey;
 }
 
-/* TODO: RESPONSIVE FONT SIZE FOR .splash .title h1 */
+/* media queries for .splash .title h1 */
+@media (max-width: 600px) {
+	.splash .title h1 {
+    	font-size: 32px;
+	}
+}
+
+@media (min-width: 600px) {
+	.splash .title h1 {
+    	font-size: 36px;
+	}
+}
+
+@media (min-width: 768px) {
+	.splash .title h1 {
+    	font-size: 48px;
+	}
+}
+
+@media (min-width: 992px) {
+	.splash .title h1 {
+    	font-size: 54px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.splash .title h1 {
+    	font-size: 54px;
+	}
+}
 
 /* ================================== DREAM ================================== */
 
