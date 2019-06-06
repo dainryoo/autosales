@@ -3,7 +3,7 @@ body {
 	font-family: "Helvetica", sans-serif;
 }
 
-/* the "vertical" layers */
+/* ----------- the "vertical" layers ----------- */
 .layer {
     background-color: lightgrey;
     border-bottom: 1px solid red;
@@ -12,7 +12,7 @@ body {
 
 /* TODO: RESPONSIVE PADDING FOR .layer */
 
-/* flexbox container within each necessary layer */
+/* ----------- flexbox container within each necessary layer ----------- */
 .flex {
 	display: flex;
     justify-content: center;
@@ -20,46 +20,85 @@ body {
 }
 
 
-/* ----------------- HEADER ----------------- */
+/* ================================== HEADER ================================== */
+
 .header.layer {
 	height: 20px;
 	background-color: grey;
 }
 
-/* ----------------- SPLASH ----------------- */
-/* the big splash image */
+/* ================================== SPLASH ================================== */
+
+/* ----------- the big splash image ----------- */
 .splash.layer {
-	height: 70vh;
 	background-image: url("media/hero.png");
-	background-size: 150%;
 	background-repeat: no-repeat;
-	background-position: 70% 40%;
 
 	display: flex;
 	align-items: center;
 }
 
-/* TODO: RESPONSIVE HEIGHT, BACKGROUND-SIZE and -POSITION FOR .splash.layer */
+/* media queries for .splash.layer */
+@media (max-width: 600px) {
+	.splash.layer {
+		height: 40vh;
+		background-size: 440%;
+		background-position: 70% 40%;
+	}
+}
 
-/* container for text on top of splash image */
+@media (min-width: 600px) {
+	.splash.layer {
+		height: 50vh;
+		background-size: 400%;
+		background-position: 70% 40%;
+	}
+}
+
+@media (min-width: 768px) {
+	.splash.layer {
+		height: 60vh;
+		background-size: 360%;
+		background-position: 70% 40%;
+	}
+}
+
+@media (min-width: 992px) {
+	.splash.layer {
+		height: 70vh;
+		background-size: 250%;
+		background-position: 70% 40%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.splash.layer {
+		height: 70vh;
+		background-size: 180%;
+		background-position: 70% 40%;
+	}
+}
+
+/* ----------- container for text on top of splash image ----------- */
 .splash .title {
 	border: 1px solid blue;
 	width: 60%;
 }
 
-/* text on top of splash image */
+/* ----------- text on top of splash image ----------- */
 .splash .title h1 {
 	font-size: 54px;
 }
 
 /* TODO: RESPONSIVE FONT SIZE FOR .splash .title h1 */
 
-/* ----------------- DREAM ----------------- */
+/* ================================== DREAM ================================== */
+
 .dream.layer {
 	background-color: pink;
 }
 
-/* car feature input containers */
+/* ----------- car feature input containers ----------- */
 .dream .feature {
 	height: 45px;
 	width: 25%;
@@ -68,26 +107,26 @@ body {
 	border: 1px solid blue;
 }
 
-/* car feature inputs */
+/* ----------- car feature inputs ----------- */
 .dream .feature select,
 .dream .feature button {
 	width: 100%;
 }
 
+/* ================================== BRAND ================================== */
 
-/* ----------------- BRAND ----------------- */
 .brand.layer {
 	background-color: lightblue;
 }
 
-/* text description of each brand */
+/* ----------- text description of each brand ----------- */
 .brand .description {
 	width: 50%;
 	box-sizing: border-box;
 	border: 1px solid blue;
 }
 
-/* car pictures container */
+/* ----------- car pictures container ----------- */
 .brand .image {
 	width: 25%;
 	padding: 30px 10px;
@@ -97,18 +136,19 @@ body {
 	display: inline-block;
 }
 
-/* car pictures wrapper to help with image fitting inside nicely */
+/* ----------- car pictures wrapper to help with image fitting inside nicely ----------- */
 .brand .image .wrapper {
 	width: 100%;
 	overflow: hidden;
 }
 
-/* actual car picture */
+/* ----------- actual car picture ----------- */
 .brand .image img {
 	width: 100%;
 }
 
-/* ----------------- FOOTER ----------------- */
+/* ================================== FOOTER ================================== */
+
 .footer.layer {
 	height: 50px;
 	background-color: grey;
