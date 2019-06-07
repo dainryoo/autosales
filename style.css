@@ -408,24 +408,38 @@ button:hover {
 		linear-gradient(135deg, white 50%, transparent 50%),
 		linear-gradient(45deg, transparent 50%, #3d4852 50%),
 		linear-gradient(135deg, #3d4852 50%, transparent 50%);
+
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
 }
 
 .dream .feature button {
-	padding: 12px 55px;
+	padding: 14px 57px;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 
 	position: relative;
 	background-color: #f07e5e;
-	border: 2px solid #f07e5e;
+	z-index: 2;
 }
 
-.dream .feature button:hover {
+.dream .feature button:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
 	background-color: #fd9476;
-	border-color: #fd9476;
+	z-index: -1;
+	transform: translate(-100%,0);
+	content: "";
 	-webkit-transition: 0.2s;
 	transition: 0.2s;
+}
+
+.dream .feature button:hover:after {
+	transform: translate(0,0);
+	width: 100%;
 }
 
 /* ================================== BRAND ================================== */
