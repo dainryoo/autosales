@@ -418,7 +418,7 @@ button:hover {
 }
 
 .dream .feature button {
-	padding: 14px 0;
+	padding: 14px 12px;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
