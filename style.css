@@ -413,6 +413,10 @@ button:hover {
 	transition: 0.3s;
 }
 
+.dream .feature select option:first-child {
+	color: lightgrey;
+}
+
 .dream .feature button {
 	padding: 14px 57px;
 	overflow: hidden;
