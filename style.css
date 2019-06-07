@@ -533,6 +533,7 @@ button:hover {
 	overflow: hidden;
 
 	position: relative;
+	z-index: 2;
 }
 
 /* media queries for .brand .image */
@@ -597,7 +598,23 @@ button:hover {
 .brand .details .name {
 	font-size: 24px;
 	font-weight: bolder;
-	border-bottom: 2px solid white;
+}
+
+/* white line in the middle of hover display */
+.brand .image:after {
+	content: "";
+	width: 0%;
+	position: absolute;
+	top: 50%;
+	left: calc((100% - 80%)/2);
+	height: 3px;
+	z-index: 10;
+	background: white;
+}
+.brand .image:hover:after {
+	width: 80%;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
 }
 
 .brand .details .learn {
