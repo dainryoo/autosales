@@ -5,6 +5,7 @@
     <title>AutoSales</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width">
+    <script src="dropdown.js"></script>
 </head>
 
 <body>
@@ -36,23 +37,19 @@
 	<div class="dream layer flex">
 		<!-- MAKE DROPDOWN MENU -->
 		<div class="feature">
-			<select>
+			<select id="make" onchange="changeMake()">
 				<option disabled selected>Make</option>
-				<option>Honda</option>
-				<option>Audi</option>
-				<option>Ford</option>
-				<option>Chevy</option>
+				<option value="honda">Honda</option>
+				<option value="audi">Audi</option>
+				<option value="ford">Ford</option>
+				<option value="chevy">Chevy</option>
 			</select>
 		</div>
 
 		<!-- MODEL DROPDOWN MENU -->
 		<div class="feature">
-			<select>
+			<select id="model">
 				<option disabled selected>Model</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
 			</select>
 		</div>
 		<!-- PRICE DROPDOWN MENU -->
@@ -179,11 +176,11 @@
 	<div class="brand layer flex">
 		<div class="image">
 			<div class="wrapper">
-				<img src="media/ford1.png" alt="Image of Ford Mustang Shelby">
+				<img src="media/ford1.png" alt="Image of Ford Shelby">
 			</div>
 			<div class="details">
 				<div class="name">
-					Ford Mustang Shelby
+					Ford Shelby
 				</div>
 				<div class="learn">
 					Learn More
